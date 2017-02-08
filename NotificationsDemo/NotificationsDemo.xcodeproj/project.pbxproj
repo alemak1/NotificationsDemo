@@ -12,6 +12,8 @@
 		BD0EBE811E4B049700682CF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0EBE7F1E4B049700682CF4 /* Main.storyboard */; };
 		BD0EBE831E4B049700682CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0EBE821E4B049700682CF4 /* Assets.xcassets */; };
 		BD0EBE861E4B049700682CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0EBE841E4B049700682CF4 /* LaunchScreen.storyboard */; };
+		BD0EBE8E1E4B0DA900682CF4 /* gong.aif in Resources */ = {isa = PBXBuildFile; fileRef = BD0EBE8D1E4B0DA900682CF4 /* gong.aif */; };
+		BD0EBE901E4B0E2C00682CF4 /* labtop.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0EBE8F1E4B0E2C00682CF4 /* labtop.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BD0EBE821E4B049700682CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD0EBE851E4B049700682CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD0EBE871E4B049700682CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD0EBE8D1E4B0DA900682CF4 /* gong.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = gong.aif; path = ../../../../../Downloads/NotificationsDemo/NotificationsDemo/gong.aif; sourceTree = "<group>"; };
+		BD0EBE8F1E4B0E2C00682CF4 /* labtop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = labtop.png; path = ../../../../iOS_assets/taiwan_svg/labtop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				BD0EBE7B1E4B049700682CF4 /* AppDelegate.swift */,
 				BD0EBE7D1E4B049700682CF4 /* ViewController.swift */,
 				BD0EBE7F1E4B049700682CF4 /* Main.storyboard */,
+				BD0EBE8F1E4B0E2C00682CF4 /* labtop.png */,
+				BD0EBE8D1E4B0DA900682CF4 /* gong.aif */,
 				BD0EBE821E4B049700682CF4 /* Assets.xcassets */,
 				BD0EBE841E4B049700682CF4 /* LaunchScreen.storyboard */,
 				BD0EBE871E4B049700682CF4 /* Info.plist */,
@@ -124,6 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD0EBE861E4B049700682CF4 /* LaunchScreen.storyboard in Resources */,
+				BD0EBE8E1E4B0DA900682CF4 /* gong.aif in Resources */,
+				BD0EBE901E4B0E2C00682CF4 /* labtop.png in Resources */,
 				BD0EBE831E4B049700682CF4 /* Assets.xcassets in Resources */,
 				BD0EBE811E4B049700682CF4 /* Main.storyboard in Resources */,
 			);

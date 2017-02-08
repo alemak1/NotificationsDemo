@@ -22,9 +22,15 @@ class ViewController: UIViewController {
         let content = UNMutableNotificationContent()
         content.title = "10 second notification demo"
         content.subtitle = "From Changzhou Panda"
-        content.body =  "Notification after 10 seconds - Your alert is ready"
+        content.body =  "New C++ Tutorial Available - lambda functions"
         content.badge = 1
-        content.sound = UNNotificationSound.default()
+        content.sound = UNNotificationSound(named: "gong.aif")
+        
+        let imageURL = Bundle.main.url(forResource: "labtop", withExtension: "png")
+        
+        let attachment = try! UNNotificationAttachment(identifier: "labtop.png", url: imageURL!, options: nil)
+        
+        content.attachments = [attachment]
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10.0, repeats: false)
         
