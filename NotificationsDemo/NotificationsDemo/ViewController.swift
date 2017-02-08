@@ -55,7 +55,7 @@ extension ViewController: UNUserNotificationCenterDelegate{
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
     
-        print("Silently handle no notification")
+        //print("Silently handle no notification")
         completionHandler([.alert,.sound])
     }
     
