@@ -23,7 +23,9 @@ class ViewController: UIViewController {
         content.title = "10 second notification demo"
         content.subtitle = "From Changzhou Panda"
         content.body =  "Notification after 10 seconds - Your alert is ready"
-    
+        content.badge = 1
+        content.sound = UNNotificationSound.default()
+        
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10.0, repeats: false)
         
         let request = UNNotificationRequest(identifier: "10 second notificaiton", content: content, trigger: trigger)
