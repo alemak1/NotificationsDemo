@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         content.body =  "New C++ Tutorial Available - lambda functions"
         content.badge = 1
         content.sound = UNNotificationSound(named: "gong.aif")
+        content.userInfo = ["id":42]
         
         let imageURL = Bundle.main.url(forResource: "labtop", withExtension: "png")
         
@@ -36,10 +37,20 @@ class ViewController: UIViewController {
         
         let request = UNNotificationRequest(identifier: "10 second notificaiton", content: content, trigger: trigger)
         
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.add(request, withCompletionHandler: nil)
+        notificationCenter.delegate = self
     }
     
   
 
 }
 
+extension ViewController: UNUserNotificationCenterDelegate{
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print(response.notification.request.content.userInfo)
+        completionHandler()
+    }
+    
+}
